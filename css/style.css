@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 
 * {
   margin: 0;
@@ -118,7 +119,7 @@ a {
 /* Hero */
 .hero {
   height: 400px;
-  background-image: url('../img/1696.jpg');
+  background-image: url('../img/9945.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -305,10 +306,7 @@ a {
 }
 .flight-schedule .card-list .schedule .card {
   width: 240px;
-  height: 280px;
   background: #262044;
-  display: flex;
-  justify-content: center;
   border-radius: 2px;
 }
 .flight-schedule .card-list .schedule .card .card-header {
@@ -319,9 +317,12 @@ a {
   height: 70px;
   background: #312952;
   align-items: center;
-  padding: 0 20px;
+  margin: 0;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+}
+.flight-schedule .card-list .schedule .card .card-header .from {
+  margin: 0 20px;
 }
 .flight-schedule .card-list .schedule .card .card-header .from span {
   color: var(--color-silver);
@@ -331,6 +332,35 @@ a {
   color: var(--color-white);
   font-size: 1.5em;
 }
+.flight-schedule .card-list .schedule .card .card-body {
+  
+}
+.flight-schedule 
+.card-list .schedule .card .card-body .departure {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+.flight-schedule 
+.card-list .schedule .card .card-body .departure span {
+  color: var(--color-silver);
+  font-size: 1.1em;
+}
+.flight-schedule 
+.card-list .schedule .card .card-body .departure h3 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+.flight-schedule 
+.card-list .schedule .card .card-body .departure .departure-flight {
+  
+}
+.flight-schedule .card-list .schedule .card .card-body .departure .barcode {
+  font-family: "Libre Barcode 39 Text";
+  color: var(--color-silver);
+  font-size: 2.17em;
+}
+
 /* End Flight Schedule */ 
 
 /* Tablet Version */
@@ -460,7 +490,7 @@ a {
   }
   .flight-schedule .card-list .schedule {
     width: 300px;
-    margin-top: -120px;
+    margin-top: -100px;
   }
   .flight-schedule .card-list .schedule .card {
     width: 270px;
