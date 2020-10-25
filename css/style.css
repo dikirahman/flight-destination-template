@@ -333,7 +333,7 @@ a {
   font-size: 1.5em;
 }
 .flight-schedule .card-list .schedule .card .card-body {
-  
+
 }
 .flight-schedule 
 .card-list .schedule .card .card-body .departure {
@@ -496,5 +496,9 @@ a {
     width: 270px;
     height: 330px;
   }
+  .flight-schedule .card-list .schedule .card .card-body .departure .barcode {
+    font-size: 1.56rem;
+}
+
   /* End Flight Schedule */
 }
